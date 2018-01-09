@@ -1,0 +1,15 @@
+.background{
+    background-image: url("https://farm4.static.flickr.com/3712/14288859575_9799c89b08_b.jpg");
+    height: 1000px;
+    width: 100%;
+}
+.button{
+    background-color: gainsboro;
+}
+.buttons{
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+

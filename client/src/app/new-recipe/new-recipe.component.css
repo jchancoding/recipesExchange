@@ -1,0 +1,11 @@
+div{
+    background-image: url("https://farm4.static.flickr.com/3712/14288859575_9799c89b08_b.jpg");
+    height: 1000px;
+    width: 100%;
+}
+
+form{
+    bottom: 60%;
+    left: 40%;
+    position: absolute;
+}

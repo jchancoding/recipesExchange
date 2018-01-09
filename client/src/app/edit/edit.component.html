@@ -1,0 +1,21 @@
+<div class="background">
+    <div class="container">
+      <h1>{{recipe['name']}}</h1>
+      <form class="edit" (submit)="onSubmit(formdata)" #formdata ="ngForm" method="post">
+        Ingredient: <input type="text" name="ingredient" [(ngModel)]="ingredient">
+        Amount: <input type="text" name="amount" [(ngModel)]="amount">
+        <input type="submit" value="Add Ingredient">
+      </form>
+      <table align="center">
+        <tr>
+          <th>Ingredient &nbsp; </th>
+          <th>Amount</th>
+        </tr>
+        <tr *ngFor="let ingredient of recipe['_ingredients']"> 
+            <td>{{ ingredient['name'] }}</td>
+            <td>{{ ingredient['amount'] }}</td>
+        </tr>
+      </table>
+        <button class="view" (click)="view_recipe(recipe['_id'])">View Recipe</button>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="background">
+    <app-header></app-header>
+
+    <div class="info">
+        <div class="headers">
+            <h2>{{recipe['name'] }} by {{recipe['chef']}}</h2>
+            <h3>Rating: {{recipe['rating']}}</h3>
+        </div>
+        <table align="center">
+            <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+            </tr>
+            <tr *ngFor ="let ingredient of recipe['_ingredients']">
+                <td>{{ingredient['name']}}</td>
+                <td>{{ingredient['amount']}}</td>
+            </tr> 
+        </table>
+    </div>
+    <br>
+    <div class="buttons">
+        <button (click)="edit_recipe()">Edit Recipe</button>
+        <button (click)="list()">Return to Recipes</button>
+    </div>
+</div>
+
+

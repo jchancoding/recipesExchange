@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="background">
+  <div class="container">
+    <div class="info">
+        <table align="center">
+          <tr>
+            <th>Recipe</th>
+            <th>Rating</th>
+            <th>Chef</th>
+            <th>Like</th>
+          </tr>
+          <tr *ngFor ="let recipe of recipes_list">
+            <td><button (click)="goto_recipe(recipe['_id'])">{{recipe['name']}}</button></td>
+            <td>{{recipe['rating']}}</td>
+            <td>{{recipe['chef']}}</td>
+            <td><button (click)="like_recipe(recipe['_id'])">Like</button></td>
+          </tr>
+        </table>
+      <button class="new-recipe" (click)="new_recipe()">New Recipe</button>
+    </div>
+  </div>
+</div>

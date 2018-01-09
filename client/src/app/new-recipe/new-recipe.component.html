@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="background">
+    <form (submit)="onSubmit(formData)" #formData='ngForm'>
+        Recipe Name: <input type="text"       
+        [(ngModel)] = "recipe.name"  
+        name="name" 
+        #formName='ngModel'
+        required> 
+        <input type="submit" value="Start Recipe">
+    </form>
+</div>
+
+

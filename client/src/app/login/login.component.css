@@ -1,0 +1,15 @@
+.loginpage{
+    background-image: url("https://farm4.static.flickr.com/3712/14288859575_9799c89b08_b.jpg");
+    height: 1000px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+.loginform{
+    position: absolute;
+    left: 41%;
+    bottom: 75%;
+}

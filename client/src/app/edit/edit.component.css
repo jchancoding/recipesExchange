@@ -1,0 +1,33 @@
+body, html{
+    height: 1000px;
+    overflow: hidden;
+}
+.background{
+    background-image: url("https://farm4.static.flickr.com/3712/14288859575_9799c89b08_b.jpg");
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info{
+    position: absolute;
+    left: 30%;
+    bottom: 60%;
+}
+
+td, th{
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 200px;
+}
+.edit{
+    text-align: center;
+}
+.view{
+    margin: auto;
+    display: block;
+}
+

@@ -1,0 +1,19 @@
+.headerBar{
+    background: linear-gradient(white, whitesmoke);
+    height: 150px;
+}
+
+.inline-headers h1, .inline-headers button{
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+h1{
+    text-align: left;
+    margin-top: 30px;
+}
+
+button{
+    margin-left: 1200px;
+}
+
